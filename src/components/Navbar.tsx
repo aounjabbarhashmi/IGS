@@ -233,7 +233,7 @@ const Navbar: React.FC = () => {
   {navItems.map((item, index) => (
     <Box key={item.label}>
       <ListItem
-        button
+        
         onClick={() =>
           setOpenDrawerIndex(openDrawerIndex === index ? null : index)
         }
@@ -245,7 +245,7 @@ const Navbar: React.FC = () => {
       {openDrawerIndex === index && (
         <List sx={{ pl: 3 }}>
           {item.submenu.map((sub, subIndex) => (
-            <ListItem button key={subIndex}>
+            <ListItem  key={subIndex}>
               <ListItemText primary={sub} />
             </ListItem>
           ))}
