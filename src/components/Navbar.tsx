@@ -224,7 +224,7 @@ const Navbar: React.FC = () => {
     sx: { width: 250, backgroundColor: "#121212", color: "white" },
   }}
 >
-  <Box role="presentation" onClick={() => setMobileDrawerOpen(false)} sx={{ p: 2 }}>
+  <Box role="presentation"  sx={{ p: 2 }}>
     <Typography variant="h6" sx={{ mb: 2 }}>
       Menu
     </Typography>
@@ -245,7 +245,7 @@ const Navbar: React.FC = () => {
       {openDrawerIndex === index && (
         <List sx={{ pl: 3 }}>
           {item.submenu.map((sub, subIndex) => (
-            <ListItem  key={subIndex}>
+            <ListItem  key={subIndex} onClick={() => setMobileDrawerOpen(false)}>
               <ListItemText primary={sub} />
             </ListItem>
           ))}
