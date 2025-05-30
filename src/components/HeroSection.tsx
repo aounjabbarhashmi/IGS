@@ -46,7 +46,7 @@ import {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          minHeight: "70vh",
+          minHeight: "80vh",
           color: "white",
           pt: { xs: 6, md: 10 },
           pb: { xs: 4, md: 8 },
